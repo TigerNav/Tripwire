@@ -57,16 +57,21 @@ void *messages(void *ptr) {
 } 
 
 void *get_arduino_char(void *ptr) {
-    if(serialGetchar('i')) {
-        putchar(serialGetchar(serialDeviceID));
-        fflush(stdout);
-        strcpy(message_sent, "i");
-        if (send(client_sock, message_sent, sizeof(message_sent), 0) < 0)
-        {
-            std::cout << "shit\n";
+
+    while(1) {
+
+        if(serialGetchar('i')) {
+            putchar(serialGetchar(serialDeviceID));
+            fflush(stdout);
+            strcpy(message_sent, "i");
+            if (send(client_sock, message_sent, sizeof(message_sent), 0) < 0)
+            {
+                std::cout << "shit\n";
+            }
+                
         }
-            
-        }
+
+    }
 }
 
 

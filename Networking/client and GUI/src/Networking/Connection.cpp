@@ -11,7 +11,7 @@ void connect()
     socket_desc = socket(AF_INET, SOCK_STREAM, 0);
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(PORT);
-    server_addr.sin_addr.s_addr = inet_addr("192.168.1.125");
+    server_addr.sin_addr.s_addr = inet_addr("192.168.1.140");
     server_connection = connect(socket_desc, (struct sockaddr *)&server_addr, sizeof(server_addr));
 }
 
@@ -79,9 +79,10 @@ connection_loop(void *ptr)
         }
         else
         {
+            
             if (strchr(message_recived, 'i') != NULL)
             {
-                std::cout << "bruh" << std::endl;
+                std::cout << "shit\n";
                 set_alert_system(true);
             }
         }

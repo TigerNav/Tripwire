@@ -32,14 +32,13 @@ TripwireUI::render() {
         if(get_calibration_signal()) {
             ImGui::Text("Device Calibrated");
         }
-        if(ImGui::Button("Reset Device")) {
-            set_reset_signal(true);
-            set_calibration_signal(false);
-        }
+        
         if(get_alert_system()) {
-            Alert_color();
+            alert();
             if(ImGui::Button("Deactivate")) {
+                reset_alert_sounds();
                 set_alert_system(false);
+                
             }
         }
 
