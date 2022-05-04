@@ -6,7 +6,7 @@ SRC		:= src
 INCLUDE	:= include
 LIB		:= lib
 
-LIBRARIES	:= `pkg-config --cflags --libs gtk+-3.0` -rdynamic -ljson-c -lwiringPi
+LIBRARIES	:= `pkg-config --cflags --libs gtk+-3.0` -rdynamic -lwiringPi -pthread
 EXECUTABLE	:= main
 
 

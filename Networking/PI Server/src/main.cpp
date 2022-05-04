@@ -97,7 +97,7 @@ int main() {
     // Opening Port
     Server_Address.sin_port         = htons(PORT);
     // IP
-    Server_Address.sin_addr.s_addr  = inet_addr("192.168.1.125");
+    Server_Address.sin_addr.s_addr  = inet_addr("192.168.1.140");
 
 
     // Binds server to port and IP
