@@ -79,7 +79,7 @@ connection_loop(void *ptr)
         }
         else
         {
-            
+             
             if (strchr(message_recived, 'i') != NULL)
             {
                 std::cout << "shit\n";

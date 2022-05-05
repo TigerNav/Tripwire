@@ -59,10 +59,10 @@ void *messages(void *ptr) {
 void *get_arduino_char(void *ptr) {
 
     while(1) {
-
-        if(serialGetchar('i')) {
-            putchar(serialGetchar(serialDeviceID));
-            fflush(stdout);
+        int value = serialGetchar(serialDeviceID);
+        putchar(value);
+        fflush(stdout);
+        if(value == 'i') {
             strcpy(message_sent, "i");
             if (send(client_sock, message_sent, sizeof(message_sent), 0) < 0)
             {
