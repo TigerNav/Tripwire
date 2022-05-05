@@ -53,7 +53,7 @@ void loop() {
   }
 
   
-  if(disctance + 1 < calibrated_length) {
+  if(disctance + 5 < calibrated_length) {
     Serial.write("i");
     
     digitalWrite(LED, HIGH);
