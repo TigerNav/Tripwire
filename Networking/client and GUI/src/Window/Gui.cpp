@@ -33,7 +33,7 @@ Gui::window_loop() {
         ImGui_ImplGlfw_NewFrame();
         
         ImGui::NewFrame(); 
-        ImGui::ShowDemoWindow(&show_demo_window);
+        
         settingUi.render();
 
         error_check();

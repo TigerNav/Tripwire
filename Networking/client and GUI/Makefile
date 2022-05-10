@@ -8,7 +8,7 @@ DEP = $(INCLUDE)/imgui.cpp $(INCLUDE)/imgui_demo.cpp $(INCLUDE)/imgui_draw.cpp $
 DEP += $(INCLUDE)/imgui_impl_glfw.cpp $(INCLUDE)/imgui_impl_opengl3.cpp
 
 
-LIB		:= -lGL -lglfw -lOpenGL -lIrrKlang
+LIB		:= lib -lGL -lglfw -lOpenGL -lIrrKlang
 
 LIBRARIES	:=
 EXECUTABLE	:= main
