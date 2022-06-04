@@ -3,8 +3,6 @@
 #include <GLFW/glfw3.h>
 #include "imgui.h"
 #include <iostream>
-#include <AL/al.h>
-#include <AL/alc.h>
 #include <irrKlang/irrKlang.h>
 
 extern ImVec4      alert_color;

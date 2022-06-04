@@ -1,6 +1,5 @@
 #pragma once
 #include "imgui.h"
-#include "../image.h"
 #include <pthread.h>
 #include <GLFW/glfw3.h>
 #include <iostream>

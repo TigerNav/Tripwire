@@ -11,9 +11,6 @@ TripwireUI::render() {
     ImGui::Begin("Tripwire");
 
     ImGui::Text("Status");
-    
-    ret = LoadTextureFromFile("/home/navin/programming stuff/Tripwire/Networking/client and GUI/src/Assets/CheckMark.png", 
-                                &my_image_texture, my_image_width, my_image_height);
 
     IM_ASSERT(ret);
 
